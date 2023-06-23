@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pepsi Website Landing Page</title>
+    <link rel="stylesheet" href="pepsi.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="pepsilogo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I Like</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos praesentium fugit repellat quas
+                    adipisci odio, accusamus sed delectus aperiam aut impedit cum consequatur provident corrupti laborum
+                    incidunt eos quam ducimus!</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onclick="imgslider('pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="pepsi002.png" onclick="imgslider('pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="pepsi003.png" onclick="imgslider('pepsi003.png')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgslider(anything) {
+            document.queryselector('.pepsi').src = anything;
+        }
+        function changeBgColor(color) {
+            const sec = document.queryselector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
